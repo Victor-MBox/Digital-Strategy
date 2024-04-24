@@ -1,0 +1,153 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Заголовки */
+
+h1 {
+	font-weight: 800;
+	font-size: 51px;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 37px;
+	line-height: 105%;
+}
+
+h3 {
+	font-weight: 600;
+	font-size: 21px;
+	line-height: 114%;
+}
+
+h4 {
+	font-weight: 600;
+	font-size: 21px;
+	line-height: 105%;
+}
+
+h5 {
+	font-weight: 500;
+	font-size: 21px;
+	line-height: 105%;
+}
+
+.article h3 {
+	font-weight: 600;
+	font-size: 21px;
+	line-height: 114%;
+}
+
+/* Контент */
+
+.text {
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.text-2 {
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.text-bold {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 105%;
+}
+
+.text-article {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 133%;
+}
+
+.text-article-bold {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 133%;
+}
+
+.link {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 133%;
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+}
+
+.quote {
+	font-style: italic;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 133%;
+}
+
+.author {
+	font-weight: 500;
+	font-size: 24px;
+}
+
+.tag {
+	font-weight: 500;
+	font-size: 12px;
+}
+
+.description {
+	font-weight: 400;
+	font-size: 12px;
+}
+
+/* Мобильная версия */
+@media (max-width: 767px) {
+	h1 {
+		font-weight: 800;
+		font-size: 34px;
+		text-transform: uppercase;
+	}
+
+	h2 {
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 105%;
+	}
+
+	h3 {
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 105%;
+	}
+
+	h4 {
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 105%;
+	}
+
+	.article h3 {
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 133%;
+	}
+
+	.text-article {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 150%;
+	}
+
+	.text-article-bold {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 150%;
+	}
+
+	.quote {
+		font-style: italic;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 150%;
+	}
+}

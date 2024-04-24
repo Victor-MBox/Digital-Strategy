@@ -1,0 +1,164 @@
+* {
+	box-sizing: border-box;
+}
+
+svg path,
+svg rect {
+	transition: 0.2s;
+}
+
+body {
+	background: $background;
+}
+
+.container {
+	max-width: 1160px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.page {
+	margin-top: 132px;
+}
+
+/* Х.крошки */
+.bread-crumbs {
+	margin-bottom: 40px;
+	&__first-link {
+		color: $blue1;
+		margin-right: 9px;
+	}
+	svg {
+		margin-right: 9px;
+	}
+	span {
+		color: $blue1;
+	}
+}
+
+/* Карточка автора */
+.author-info {
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+	img {
+		border-radius: 100%;
+		margin-right: 40px;
+	}
+	&__title {
+		color: $branded;
+		margin-bottom: 8px;
+	}
+	&__text {
+		color: $blue-background;
+	}
+}
+
+/* Карточки статей */
+.publications {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	margin-bottom: 118px;
+	&__item {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		background: #fff;
+		border-radius: 20px;
+		padding: 10px 40px 10px 10px;
+
+		&_small {
+			width: 30.9%;
+			flex-direction: column;
+			align-items: normal;
+			padding: 10px;
+			.publications__image {
+				margin-right: 0;
+			}
+			.publications__title {
+				font-size: 28px;
+			}
+			.publications__image {
+				margin-bottom: 20px;
+			}
+			.publications__item-wrapper {
+				flex-grow: 1;
+				display: flex;
+				flex-direction: column;
+			}
+            .publications__text {
+                flex-grow: 1;
+            }
+            .publications__info-box {
+                margin-bottom: 20px;
+            }
+            .publications__info-box-wrapper {
+                margin-right: 15px;
+                gap: 5px;
+            }
+		}
+	}
+	&__image {
+		margin-right: 40px;
+	}
+	&__tags ul {
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+		li {
+			margin-right: 10px;
+			&:last-child {
+				margin-right: 0;
+			}
+			a {
+				color: $blue1;
+			}
+		}
+	}
+	&__title {
+		color: $black;
+		margin-bottom: 10px;
+	}
+	&__text {
+		color: $dark-grey;
+		margin-bottom: 20px;
+	}
+	&__info-box,
+	&__info-box-wrapper {
+		display: flex;
+		align-items: center;
+	}
+	&__info-box-wrapper {
+		margin-right: 40px;
+		display: flex;
+		gap: 10px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__info-box {
+		margin-bottom: 10px;
+	}
+	&__date {
+		color: $gray2;
+	}
+}
+
+.info-box {
+	display: flex;
+	align-items: center;
+	border-radius: 20px;
+	padding: 10px 11px;
+	height: 35px;
+	background: $background;
+	svg,
+	img {
+		margin-right: 7px;
+	}
+	span {
+		color: $black;
+	}
+}
