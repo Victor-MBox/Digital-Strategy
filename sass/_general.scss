@@ -69,6 +69,10 @@ body {
 		background: #fff;
 		border-radius: 20px;
 		padding: 10px 40px 10px 10px;
+		transition: 0.3s;
+		&:hover {
+			box-shadow: -10px 10px 0 0 #0c50e9;
+		}
 
 		&_small {
 			width: 30.9%;
@@ -89,32 +93,31 @@ body {
 				display: flex;
 				flex-direction: column;
 			}
-            .publications__text {
-                flex-grow: 1;
-            }
-            .publications__info-box {
-                margin-bottom: 20px;
-            }
-            .publications__info-box-wrapper {
-                margin-right: 15px;
-                gap: 5px;
-            }
+			.publications__text {
+				flex-grow: 1;
+			}
+			.publications__info-box {
+				margin-bottom: 20px;
+			}
+			.publications__info-box-wrapper {
+				margin-right: 15px;
+				gap: 5px;
+			}
 		}
 	}
 	&__image {
 		margin-right: 40px;
+        border-radius: 10px;
 	}
 	&__tags ul {
 		display: flex;
 		align-items: center;
 		margin-bottom: 10px;
 		li {
+			color: $blue1;
 			margin-right: 10px;
 			&:last-child {
 				margin-right: 0;
-			}
-			a {
-				color: $blue1;
 			}
 		}
 	}
@@ -155,10 +158,36 @@ body {
 	height: 35px;
 	background: $background;
 	svg,
-	img {
+	p {
 		margin-right: 7px;
 	}
 	span {
 		color: $black;
+	}
+}
+
+/* Выбор редактора */
+.editors-choice {
+	padding-bottom: 190px;
+	&__title {
+		font-weight: 800;
+		font-size: 51px;
+		text-transform: uppercase;
+		color: $blue-header;
+		margin-bottom: 20px;
+	}
+	.publications__item_small {
+		width: 100%;
+		min-height: 469px;
+	}
+	.swiper {
+		margin: -10px;
+        padding: 10px;
+	}
+	.swiper-wrapper {
+		gap: 40px;
+	}
+	.swiper-slide {
+		width: 31%;
 	}
 }
